@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --page-bg: #f4f0e7;
+  --page-bg: #f8e8d6;
   --ink: #111111;
 }
 
@@ -43,6 +43,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  border: solid 2px #c12a1b;
 }
 
 .site-footer {
