@@ -20,10 +20,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.email-banner-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 4px 12px 0;
+}
+
+.email-banner-link {
+  display: block;
+  width: min(660px, 51vw);
+  max-width: 100%;
+  line-height: 0;
+  transition: opacity 150ms ease;
+}
+
+.email-banner-link:hover,
+.email-banner-link:focus-visible {
+  opacity: 0.78;
+}
+
+.email-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .site-main {
   width: 100%;
   padding:
-    clamp(12px, 2vw, 28px)
+    4px
     clamp(12px, 2vw, 28px)
     0;
 }
@@ -85,6 +111,18 @@ body {
 }
 
 @media (max-width: 800px) {
+  .email-banner-header {
+    padding: 4px 10px 0;
+  }
+
+  .email-banner-link {
+    width: min(480px, 90vw);
+  }
+
+  .site-main {
+    padding: 4px 10px 0;
+  }
+
   .menus {
     grid-template-columns: 1fr;
   }
@@ -103,3 +141,5 @@ body {
     height: 32px;
   }
 }
+
+
