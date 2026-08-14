@@ -132,7 +132,7 @@ body {
     padding:
       14px
       14px
-      max(28px, env(safe-area-inset-bottom));
+      calc(64px + env(safe-area-inset-bottom));
     overflow: visible;
   }
 
