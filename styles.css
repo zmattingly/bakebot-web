@@ -76,8 +76,8 @@ body {
   align-items: center;
   gap: clamp(14px, 2vw, 22px);
   width: 100%;
-  padding: 0 20px 14px;
-  overflow: hidden;
+  padding: 12px 20px 24px;
+  overflow: visible;
 }
 
 .penrose-logo {
@@ -128,18 +128,23 @@ body {
   }
 
   .site-footer {
-    gap: 12px;
-    padding: 0 14px 12px;
+    gap: 18px;
+    padding:
+      14px
+      14px
+      max(28px, env(safe-area-inset-bottom));
+    overflow: visible;
   }
 
   .penrose-logo {
-    width: min(180px, 46vw);
+    width: min(180px, 42vw);
+    height: auto;
+    flex-shrink: 1;
   }
 
   .footer-link {
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
   }
 }
-
-
